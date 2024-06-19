@@ -43,7 +43,7 @@ final class SecurityController extends AbstractController
     ): Response {
         // if user is already logged in, don't display the login page again
         if ($user) {
-            if (\in_array('ROLE_ADMIN', $user->getRoles())) {
+            if (\in_array('ROLE_ADMIN', $user->getRoles(), true)) {
                 return $this->redirectToRoute('admin_index');
             }
 
