@@ -448,7 +448,7 @@
             </trans-unit>
             <trans-unit id="instructions.question1.title">
                 <source>instructions.question1.title</source>
-                <target>Exercice 1 - Ajouter la possibilité de visualiser la liste des utilisateurs (création d'une vue de type "liste")</target>
+                <target>Exercice 1 - Ajouter la possibilité de visualiser la liste des utilisateurs (création d'une vue de type liste)</target>
             </trans-unit>
             <trans-unit id="instructions.question1.details">
                 <source>instructions.question1.details</source>
@@ -468,7 +468,7 @@
             </trans-unit>
             <trans-unit id="instructions.question3.details">
                 <source>instructions.question3.details</source>
-                <target><![CDATA[<ul><li>Dans le formulaire de création d'un nouvel article <strong>(/admin/post/new)</strong>, ajouter une case à cochée "Article visible uniquement par les administrateurs"</li><li>Dans la liste des articles <strong>(/blog/)</strong>, si l'on n'est pas connecté ou si l'on ne dispose pas d'un profil administrateur, ne pas afficher les articles administrateurs.</li><li>S'assurer que l'on ne puisse pas accéder à un article administrateur en saisissant l'adresse pour y accéder directement <strong>(/blog/posts/{article_slug})</strong></li></ul>]]></target>
+                <target><![CDATA[<ul><li>Dans le formulaire de création d'un nouvel article <strong>(/admin/post/new)</strong>, ajouter une case à cochée "Article visible uniquement par les administrateurs".</li><li>Dans la liste des articles <strong>(/blog/)</strong>, si l'on n'est pas connecté ou si l'on ne dispose pas d'un profil administrateur, ne pas afficher les articles administrateurs.</li><li>S'assurer que l'on ne puisse pas accéder à un article administrateur en saisissant l'adresse pour y accéder directement <strong>(/blog/posts/{article_slug})</strong>.</li></ul>]]></target>
             </trans-unit>
         </body>
     </file>

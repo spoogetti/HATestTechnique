@@ -446,6 +446,34 @@
                 <source>paginator.current</source>
                 <target>(current)</target>
             </trans-unit>
+            <trans-unit id="instructions.title">
+                <source>instructions.title</source>
+                <target>Technical test H&amp;A</target>
+            </trans-unit>
+            <trans-unit id="instructions.question1.title">
+                <source>instructions.question1.title</source>
+                <target>Exercise 1 - Add the ability to view the user list (create a list view)</target>
+            </trans-unit>
+            <trans-unit id="instructions.question1.details">
+                <source>instructions.question1.details</source>
+                <target><![CDATA[<ul><li>Create a view listing all the users in the application</li><li>This view should only be accessible to users with the administration role.</li><li>This view must be accessible (once authenticated and in the admin section) from the top banner (next to the link to the list of articles).</li></ul>]]></target>
+            </trans-unit>
+            <trans-unit id="instructions.question2.title">
+                <source>instructions.question2.title</source>
+                <target>Exercise 2 - Adding the ability to create a new user (creating a form view)</target>
+            </trans-unit>
+            <trans-unit id="instructions.question2.details">
+                <source>instructions.question2.details</source>
+                <target><![CDATA[<ul><li>Create a new view to create a new user.</li><li>This view should only be accessible to users with the administration role.</li><li>This view must be accessible from the previously created view via a button, in the same way as for creating a new item from the list of items in the administration area.</li></ul>]]></target>
+            </trans-unit>
+            <trans-unit id="instructions.question3.title">
+                <source>instructions.question3.title</source>
+                <target>Exercise 3 - Allowing the creation of an article visible only to administrators (functional security)</target>
+            </trans-unit>
+            <trans-unit id="instructions.question3.details">
+                <source>instructions.question3.details</source>
+                <target><![CDATA[<ul><li>In the form for creating a new article <strong>(/admin/post/new)</strong>, add a checkbox "Article visible only to administrators".</li><li>In the list of <strong>(/blog/)</strong> articles, if you are not logged in or do not have an administrator profile, do not display administrator articles.</li><li>Ensure that an administrator article cannot be accessed by entering the address to access it directly <strong>(/blog/posts/{article_slug})</strong>.</li></ul>]]></target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
