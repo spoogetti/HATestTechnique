@@ -38,6 +38,30 @@
                 <source>comment.is_spam</source>
                 <target>The content of this comment is considered spam.</target>
             </trans-unit>
+            <trans-unit id="instructions.question1.title">
+                <source>instructions.question1.title</source>
+                <target>Exercise 1 - Add the ability to view the user list (create a "list" view)</target>
+            </trans-unit>
+            <trans-unit id="instructions.question1.details">
+                <source>instructions.question1.details</source>
+                <target><![CDATA[<ul><li>Create a view listing all the users in the application</li><li>This view should only be accessible to users with the administration role.</li><li>This view must be accessible (once authenticated and in the admin section) from the top banner (next to the link to the list of articles).</li></ul>]]></target>
+            </trans-unit>
+            <trans-unit id="instructions.question2.title">
+                <source>instructions.question2.title</source>
+                <target>Exercice 2 - Ajouter la possibilité de créer un nouvel utilisateur (création d'une vue de type formulaire)</target>
+            </trans-unit>
+            <trans-unit id="instructions.question2.details">
+                <source>instructions.question2.details</source>
+                <target><![CDATA[<ul><li>Créer une nouvelle vue permettant de créer un nouvel utilisateur.</li><li>Cette vue ne doit être accessible qu'aux utilisateurs possédant le rôle d'administration.</li><li>This view must be accessible from the previously created view via a button, in the same way as for creating a new item from the list of items in the administration area.</li></ul>]]></target>
+            </trans-unit>
+            <trans-unit id="instructions.question3.title">
+                <source>instructions.question3.title</source>
+                <target>Exercice 3 - Permettre la création d'un article visible uniquement par les administrateurs (sécurité fonctionnelle)</target>
+            </trans-unit>
+            <trans-unit id="instructions.question3.details">
+                <source>instructions.question3.details</source>
+                <target><![CDATA[<ul><li>Dans le formulaire de création d'un nouvel article <strong>(/admin/post/new)</strong>, ajouter une case à cochée "Article visible uniquement par les administrateurs"</li><li>Dans la liste des articles <strong>(/blog/)</strong>, si l'on n'est pas connecté ou si l'on ne dispose pas d'un profil administrateur, ne pas afficher les articles administrateurs.</li><li>S'assurer que l'on ne puisse pas accéder à un article administrateur en saisissant l'adresse pour y accéder directement <strong>(/blog/posts/{article_slug})</strong></li></ul>]]></target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

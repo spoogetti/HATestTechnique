@@ -37,10 +37,44 @@
                     {{ 'help.browse_admin'|trans|raw }}
                 </p>
                 <p>
-                    <a class="btn btn-primary btn-lg" href="{{ path('admin_index') }}">
+                    <a class="btn btn-primary btn-lg" href="{{ path('security_login') }}">
                         <i class="fa fa-lock" aria-hidden="true"></i> {{ 'action.browse_admin'|trans }}
                     </a>
                 </p>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm">
+            <div class="jumbotron">
+                <h1>
+                    {{ 'instructions.title'|trans|raw }}
+                </h1>
+                <div class="col-sm" style="text-align: left; margin-top: 20px;">
+                    <h3>
+                        {{ 'instructions.question1.title'|trans|raw }}
+                    </h3>
+                    <p>
+                        {{ 'instructions.question1.details'|trans|raw }}
+                    </p>
+                </div>
+                <div class="col-sm" style="text-align: left; margin-top: 20px;">
+                    <h3>
+                        {{ 'instructions.question2.title'|trans|raw }}
+                    </h3>
+                    <p>
+                        {{ 'instructions.question2.details'|trans|raw }}
+                    </p>
+                </div>
+                <div class="col-sm" style="text-align: left; margin-top: 20px;">
+                    <h3>
+                        {{ 'instructions.question3.title'|trans|raw }}
+                    </h3>
+                    <p>
+                        {{ 'instructions.question3.details'|trans|raw }}
+                    </p>
+                </div>
             </div>
         </div>
     </div>
