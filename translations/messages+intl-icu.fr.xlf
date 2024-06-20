@@ -58,7 +58,7 @@
 
             <trans-unit id="title.homepage">
                 <source>title.homepage</source>
-                <target><![CDATA[Bienvenue sur l'application <strong>Symfony Demo</strong>]]></target>
+                <target><![CDATA[<strong>H&A</strong> Location - Plateforme de test technique]]></target>
             </trans-unit>
             <trans-unit id="title.source_code">
                 <source>title.source_code</source>
@@ -445,6 +445,14 @@
             <trans-unit id="instructions.title">
                 <source>instructions.title</source>
                 <target>Test technique H&amp;A</target>
+            </trans-unit>
+            <trans-unit id="instructions.global.title">
+                <source>instructions.global.title</source>
+                <target>Consignes générales</target>
+            </trans-unit>
+            <trans-unit id="instructions.global.details">
+                <source>instructions.global.details</source>
+                <target><![CDATA[<ul><li>Pensez à enrichir les tests automatisés au fur et à mesure de l'ajout des fonctionnalités.</li><li>Essayez de respecter les règles de mise en forme du code déjà utilisées dans l'application</li></ul>]]></target>
             </trans-unit>
             <trans-unit id="instructions.question1.title">
                 <source>instructions.question1.title</source>

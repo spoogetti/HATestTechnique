@@ -1,84 +1,46 @@
-Symfony Demo Application
+H&A Location - Plateforme de test technique
 ========================
 
-The "Symfony Demo Application" is a reference application created to show how
-to develop applications following the [Symfony Best Practices][1].
+"H&A Location - Plateforme de test technique" est une application basée sur la "Symfony Demo Application", qui est une application de référence créée pour montrer comment développer une application Symfony en se basant sur les bonnes pratiques([Symfony Best Practices][1]).
 
-You can also learn about these practices in [the official Symfony Book][5].
-
-Requirements
+Pré-requis
 ------------
 
-  * PHP 8.2.0 or higher;
-  * PDO-SQLite PHP extension enabled;
-  * and the [usual Symfony application requirements][2].
+  * PHP 8.2.0 minimum;
+  * L'extension PDO-SQLite PHP activée;
+  * Ainsi que lesand the [usual Symfony application requirements][2].
 
 Installation
 ------------
 
-There are 3 different ways of installing this project depending on your needs:
+Pour installer l'application, le plus simple et le plus rapide est de :
 
-**Option 1.** [Download Symfony CLI][4] and use the `symfony` binary installed
-on your computer to run this command:
+**Télécharger Symfony CLI.** Allez sur la page suivante [Download Symfony CLI][4] et installez Symfony CLI. Utilisez ensuite la commande suivante :
 
 ```bash
 symfony new --demo my_project
 ```
 
-**Option 2.** [Download Composer][6] and use the `composer` binary installed
-on your computer to run these commands:
-
-```bash
-# you can create a new project based on the Symfony Demo project...
-composer create-project symfony/symfony-demo my_project
-
-# ...or you can clone the code repository and install its dependencies
-git clone https://github.com/symfony/demo.git my_project
-cd my_project/
-composer install
-```
-
-**Option 3.** Click the following button to deploy this project on Platform.sh,
-the official Symfony PaaS, so you can try it without installing anything locally:
-
-<p align="center">
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/symfonycorp/platformsh-symfony-template-metadata/main/symfony-demo.template.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform"><img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="180px" /></a>
-</p>
-
 Usage
 -----
 
-There's no need to configure anything before running the application. There are
-2 different ways of running this application depending on your needs:
-
-**Option 1.** [Download Symfony CLI][4] and run this command:
+Il n'y a normalement rien de particulier à configurer avant de démarrer l'application. Vous pouvez démarrer le serveur symfony local tout de suite avec la commande suivante :
 
 ```bash
 cd my_project/
 symfony serve
 ```
 
-Then access the application in your browser at the given URL (<https://localhost:8000> by default).
+Ensuite, vous devriez pouvoir accéder à l'adresse suivante (<https://localhost:8000> par défaut). Attention, si vous utilisez WSL2, utilisez bien "localhost" et non pas "127.0.0.1" pour accéder à l'application.
 
-**Option 2.** Use a web server like Nginx or Apache to run the application
-(read the documentation about [configuring a web server for Symfony][3]).
-
-On your local machine, you can run this command to use the built-in PHP web server:
-
-```bash
-cd my_project/
-php -S localhost:8000 -t public/
-```
-
-Tests
------
-
-Execute this command to run tests:
+Pour exécuter les tests automatisés, utilisez la commande suivante :
 
 ```bash
 cd my_project/
 ./bin/phpunit
 ```
+
+Les consignes du test techniques sont affichées sur la page d'accueil de l'application.
 
 [1]: https://symfony.com/doc/current/best_practices.html
 [2]: https://symfony.com/doc/current/setup.html#technical-requirements
