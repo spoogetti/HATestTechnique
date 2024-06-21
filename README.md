@@ -10,16 +10,6 @@ Pré-requis
   * L'extension PDO-SQLite PHP activée;
   * Ainsi que lesand the [usual Symfony application requirements][2].
 
-Installation
-------------
-
-Pour installer l'application, le plus simple et le plus rapide est de :
-
-**Télécharger Symfony CLI.** Allez sur la page suivante [Download Symfony CLI][4] et installez Symfony CLI. Utilisez ensuite la commande suivante :
-
-```bash
-symfony new --demo my_project
-```
 
 Usage
 -----
