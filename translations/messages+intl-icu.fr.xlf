@@ -80,6 +80,10 @@
                 <source>title.post_list</source>
                 <target>Liste des articles</target>
             </trans-unit>
+            <trans-unit id="title.user_list">
+                <source>title.user_list</source>
+                <target>Liste des utilisateurs</target>
+            </trans-unit>
             <trans-unit id="title.edit_post">
                 <source>title.edit_post</source>
                 <target>Modifier l'article #{id, number}</target>
@@ -186,6 +190,10 @@
                 <target>Modifier le mot de passe</target>
             </trans-unit>
 
+            <trans-unit id="label.id">
+                <source>label.id</source>
+                <target>ID</target>
+            </trans-unit>
             <trans-unit id="label.title">
                 <source>label.title</source>
                 <target>Titre</target>
@@ -278,6 +286,10 @@
             <trans-unit id="menu.post_list">
                 <source>menu.post_list</source>
                 <target>Liste des articles</target>
+            </trans-unit>
+            <trans-unit id="menu.user_list">
+                <source>menu.user_list</source>
+                <target>Liste des utilisateurs</target>
             </trans-unit>
             <trans-unit id="menu.back_to_blog">
                 <source>menu.back_to_blog</source>
