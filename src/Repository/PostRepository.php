@@ -13,9 +13,12 @@ namespace App\Repository;
 
 use App\Entity\Post;
 use App\Entity\Tag;
+use App\Entity\User;
 use App\Pagination\Paginator;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use Symfony\Bundle\SecurityBundle\Security;
+
 use function Symfony\Component\String\u;
 
 /**
@@ -34,7 +37,8 @@ use function Symfony\Component\String\u;
  */
 class PostRepository extends ServiceEntityRepository
 {
-    public function __construct(ManagerRegistry $registry)
+    public function __construct(
+        ManagerRegistry $registry, private Security $security)
     {
         parent::__construct($registry, Post::class);
     }
@@ -47,13 +51,18 @@ class PostRepository extends ServiceEntityRepository
             ->leftJoin('p.tags', 't')
             ->where('p.publishedAt <= :now')
             ->orderBy('p.publishedAt', 'DESC')
-            ->setParameter('now', new \DateTimeImmutable())
-        ;
+            ->setParameter('now', new \DateTimeImmutable());
+
+        if (!$this->security->isGranted(User::ROLE_ADMIN)) {
+            $qb->andWhere('p.adminOnly = false');
+        }
 
         if (null !== $tag) {
             $qb->andWhere(':tag MEMBER OF p.tags')
                 ->setParameter('tag', $tag);
         }
+
+
 
         return (new Paginator($qb))->paginate($page);
     }
@@ -76,6 +85,10 @@ class PostRepository extends ServiceEntityRepository
                 ->orWhere('p.title LIKE :t_'.$key)
                 ->setParameter('t_'.$key, '%'.$term.'%')
             ;
+        }
+
+        if (!$this->security->isGranted(User::ROLE_ADMIN)) {
+            $queryBuilder->andWhere('p.adminOnly = false');
         }
 
         return $queryBuilder

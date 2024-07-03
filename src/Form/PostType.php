@@ -62,6 +62,9 @@ final class PostType extends AbstractType
                 'help' => 'help.post_content',
                 'label' => 'label.content',
             ])
+            ->add('adminOnly', null, [
+                'label' => 'label.admin_only',
+            ])
             ->add('publishedAt', DateTimePickerType::class, [
                 'label' => 'label.published_at',
                 'help' => 'help.post_publication',

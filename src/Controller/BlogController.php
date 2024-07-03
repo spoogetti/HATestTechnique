@@ -94,6 +94,10 @@ final class BlogController extends AbstractController
         // You can also leverage Symfony's 'dd()' function that dumps and
         // stops the execution
 
+        if ($post->isAdminOnly() && !$this->isGranted(User::ROLE_ADMIN)) {
+            throw $this->createAccessDeniedException('Unable to access this page!');
+        }
+
         return $this->render('blog/post_show.html.twig', ['post' => $post]);
     }
 

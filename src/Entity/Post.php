@@ -58,6 +58,9 @@ class Post
     #[Assert\Length(min: 10, minMessage: 'post.too_short_content')]
     private ?string $content = null;
 
+    #[ORM\Column(type: Types::BOOLEAN)]
+    private ?bool $adminOnly = null;
+
     #[ORM\Column]
     private \DateTimeImmutable $publishedAt;
 
@@ -121,6 +124,16 @@ class Post
     public function setContent(?string $content): void
     {
         $this->content = $content;
+    }
+
+    public function isAdminOnly(): bool
+    {
+        return $this->adminOnly;
+    }
+
+    public function setAdminOnly(bool $adminOnly): void
+    {
+        $this->adminOnly = $adminOnly;
     }
 
     public function getPublishedAt(): \DateTimeImmutable
