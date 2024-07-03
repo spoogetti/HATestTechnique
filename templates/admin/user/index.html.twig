@@ -30,6 +30,11 @@
 {% block sidebar %}
     {{ parent() }}
 
+    <div class="section actions">
+        <a href="{{ path('admin_user_new') }}" class="btn btn-lg btn-block btn-success">
+            <i class="fa fa-plus" aria-hidden="true"></i> {{ 'action.create_user'|trans }}
+        </a>
+    </div>
+
     {{ show_source_code(_self) }}
-    {{ include('blog/_rss.html.twig') }}
 {% endblock %}

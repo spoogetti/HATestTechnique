@@ -78,15 +78,12 @@ class PostRepository extends ServiceEntityRepository
             ;
         }
 
-        /** @var Post[] $result */
-        $result = $queryBuilder
+        return $queryBuilder
             ->orderBy('p.publishedAt', 'DESC')
             ->setMaxResults($limit)
             ->getQuery()
             ->getResult()
         ;
-
-        return $result;
     }
 
     /**
